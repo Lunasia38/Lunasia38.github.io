@@ -175,15 +175,15 @@ feed:
   category_dir: false
   rss:
     enable: true
-    template: "themes/shokaX/layout/_alternate/rss.ejs"
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/rss.ejs"
     output: "rss.xml"
   atom:
     enable: true
-    template: "themes/shokaX/layout/_alternate/atom.ejs"
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/atom.ejs"
     output: "atom.xml"
   jsonFeed:
     enable: true
-    template: "themes/shokaX/layout/_alternate/json.ejs"
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
     output: "feed.json"
 # rss:
 #     enable: true
