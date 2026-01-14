@@ -105,12 +105,12 @@ theme: shokax
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: ""
 deploy:
-  type: git
-  repository: git@github.com:Lunasia38/Lunasia38.github.io.git #你刚刚复制的链接
-  branch: main
+  type: ""
+# deploy:
+#   type: git
+#   repository: git@github.com:Lunasia38/Lunasia38.github.io.git #你刚刚复制的链接
+#   branch: main
 # Markdown
 markdown:
   render: # 渲染器设置
@@ -175,15 +175,15 @@ feed:
   category_dir: false
   rss:
     enable: true
-    template: "node_modules/hexo-theme-shokax/layout/_alternate/rss.ejs"
+    template: "themes/shokaX/layout/_alternate/rss.ejs"
     output: "rss.xml"
   atom:
     enable: true
-    template: "node_modules/hexo-theme-shokax/layout/_alternate/atom.ejs"
+    template: "themes/shokaX/layout/_alternate/atom.ejs"
     output: "atom.xml"
   jsonFeed:
     enable: true
-    template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
+    template: "themes/shokaX/layout/_alternate/json.ejs"
     output: "feed.json"
 # rss:
 #     enable: true
