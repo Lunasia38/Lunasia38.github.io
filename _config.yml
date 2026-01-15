@@ -13,7 +13,9 @@ timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+# url: http://example.com
+# 腾讯云Edgeone测试域名
+url: https://fumanblog-rm6y7uowvj.edgeone.cool?eo_token=ef3261fb3b6c1a9f4f5d41112d9983e0&eo_time=1768468964
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
