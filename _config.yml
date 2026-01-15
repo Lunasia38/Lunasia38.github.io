@@ -173,27 +173,27 @@ feed:
   order_by: "-date"
   tag_dir: false
   category_dir: false
-  rss:
+  # rss:
+  #   enable: true
+  #   template: "node_modules/hexo-theme-shokax/layout/_alternate/rss.ejs"
+  #   output: "rss.xml"
+  # atom:
+  #   enable: true
+  #   template: "node_modules/hexo-theme-shokax/layout/_alternate/atom.ejs"
+  #   output: "atom.xml"
+  # jsonFeed:
+  #   enable: true
+  #   template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
+  #   output: "feed.json"
+rss:
     enable: true
-    template: "node_modules/hexo-theme-shokax/layout/_alternate/rss.ejs"
+    template: "themes/shokaX/layout/_alternate/rss.ejs"
     output: "rss.xml"
   atom:
     enable: true
-    template: "node_modules/hexo-theme-shokax/layout/_alternate/atom.ejs"
+    template: "themes/shokaX/layout/_alternate/atom.ejs"
     output: "atom.xml"
   jsonFeed:
     enable: true
-    template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
+    template: "themes/shokaX/layout/_alternate/json.ejs"
     output: "feed.json"
-# rss:
-#     enable: true
-#     template: "themes/shokaX/layout/_alternate/rss.ejs"
-#     output: "rss.xml"
-#   atom:
-#     enable: true
-#     template: "themes/shokaX/layout/_alternate/atom.ejs"
-#     output: "atom.xml"
-#   jsonFeed:
-#     enable: true
-#     template: "themes/shokaX/layout/_alternate/json.ejs"
-#     output: "feed.json"
