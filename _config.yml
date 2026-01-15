@@ -186,14 +186,14 @@ feed:
   #   template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
   #   output: "feed.json"
 rss:
-    enable: true
-    template: "themes/shokaX/layout/_alternate/rss.ejs"
-    output: "rss.xml"
-  atom:
-    enable: true
-    template: "themes/shokaX/layout/_alternate/atom.ejs"
-    output: "atom.xml"
-  jsonFeed:
-    enable: true
-    template: "themes/shokaX/layout/_alternate/json.ejs"
-    output: "feed.json"
+  enable: true
+  template: "themes/shokaX/layout/_alternate/rss.ejs"
+  output: "rss.xml"
+atom:
+  enable: true
+  template: "themes/shokaX/layout/_alternate/atom.ejs"
+  output: "atom.xml"
+jsonFeed:
+  enable: true
+  template: "themes/shokaX/layout/_alternate/json.ejs"
+  output: "feed.json"
