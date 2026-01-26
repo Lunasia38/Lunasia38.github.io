@@ -40,12 +40,3 @@ performance:
 pagefind:
   enable: true
 # 随机封面图列表
-image_list:
-  - https://i.pixiv.re/img-original/img/2025/12/19/00/18/10/138760750_p0.jpg
-  - https://i.pixiv.re/img-original/img/2025/12/10/17/58/58/138443389_p0.jpg
-  - https://i.pixiv.re/img-original/img/2025/12/15/00/00/10/138613692_p0.jpg
-  - https://i.pixiv.re/img-original/img/2025/12/30/02/15/06/139244464_p0.jpg
-  - https://i.pixiv.re/img-original/img/2025/12/17/21/55/30/138717483_p0.jpg
-  - https://i.pixiv.re/img-original/img/2025/12/12/00/53/08/138495307_p0.jpg
-
-index_images: []
