@@ -26,7 +26,7 @@ html(lang=page.language?page.language:config.language, style=theme.grayMode ? 'f
         title
             block title
                 != `${alternate?alternate + " = ":""}${title}${subtitle?" = "+subtitle:""}`
-    body(itemscope itemtype="http://schema.org/WebPage")
+    body(itemscope itemtype="http://schema.org/WebPage" data-pagefind-body)
         != partial('_partials/loading.pug', {}, {cache: true})
         div(id="pagefind_mount")
         div(id="container")
