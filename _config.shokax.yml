@@ -39,4 +39,3 @@ performance:
 # 开启Pagefind索引
 pagefind:
   enable: true
-# 随机封面图列表
