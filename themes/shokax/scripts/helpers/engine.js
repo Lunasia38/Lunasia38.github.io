@@ -2,7 +2,7 @@ var import_hexo_util = require("hexo-util");
 const randomBG = function(count = 1, image_server = null, image_list = []) {
   let i;
   if (image_server) {
-    if (count && count > 1) {
+    if (count && count > 1) {   
       const arr = new Array(count);
       for (i = 0; i < arr.length; i++) {
         arr[i] = image_server + "?" + Math.floor(Math.random() * 999999);
