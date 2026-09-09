@@ -67,22 +67,22 @@ importers:
         version: 2.0.0
       hexo-renderer-marked:
         specifier: ^7.0.0
-        version: 7.0.1
+        version: 7.0.1(supports-color@8.1.1)
       hexo-renderer-pug:
         specifier: 3.0.0
         version: 3.0.0
       hexo-renderer-stylus:
         specifier: ^3.0.1
-        version: 3.0.1
+        version: 3.0.1(supports-color@8.1.1)
       hexo-server:
         specifier: ^3.0.0
-        version: 3.0.0
+        version: 3.0.0(supports-color@8.1.1)
       hexo-theme-landscape:
         specifier: ^1.0.0
         version: 1.1.0
       hexo-theme-shokax:
         specifier: ^0.5.4
-        version: 0.5.4(chalk@4.1.2)(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+        version: 0.5.4(chalk@4.1.2)(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       hexo-util:
         specifier: 3.3.0
         version: 3.3.0
@@ -93,17 +93,17 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       katex:
-        specifier: 0.16.22
-        version: 0.16.22
+        specifier: 0.18.6
+        version: 0.18.6
       mouse-firework:
         specifier: 0.1.1
         version: 0.1.1
       nyx-player:
         specifier: 0.1.1
-        version: 0.1.1(postcss@8.5.6)(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+        version: 0.1.1(postcss@8.5.6)(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       shokax-uikit:
         specifier: 0.0.5
-        version: 0.0.5(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+        version: 0.0.5(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       theme-shokax-anime:
         specifier: 0.0.8
         version: 0.0.8
@@ -920,6 +920,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@unocss/astro@66.5.12':
     resolution: {integrity: sha512-ynhlljsTGTHAcQHbpqxe3IXEDXjPm9IdeDWAhPet7UiGXhW230vEZ+1/OoARqLysVSVz4pPb81MDgS167Oo4Nw==}
@@ -1313,6 +1314,10 @@ packages:
     resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
     engines: {node: '>=14'}
 
+  commander@15.0.0:
+    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+    engines: {node: '>=22.12.0'}
+
   commander@5.1.0:
     resolution: {integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==}
     engines: {node: '>= 6'}
@@ -1649,16 +1654,18 @@ packages:
 
   glob@10.5.0:
     resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@11.1.0:
     resolution: {integrity: sha512-vuNwKSaKiqm7g0THUBu2x7ckSs3XJLXE+2ssL7/MfTGPLLcrJQ/4Uq1CjPTtO5cCIiRxqvN6Twy1qOwhL0Xjcw==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -2004,6 +2011,10 @@ packages:
 
   katex@0.16.22:
     resolution: {integrity: sha512-XCHRdUw4lf3SKBaJe4EvgqIuWwkPSo9XoeO8GjQW94Bp7TWv9hNhzZjZ+OH9yf1UmLygb7DIT5GSFQiyt16zYg==}
+    hasBin: true
+
+  katex@0.18.6:
+    resolution: {integrity: sha512-5B7yiIsr7gq9hlIH6uG7hTNglHSz7I+Csa9I66dK4Ljz/YEGQMoBcC1IwtFFp34I7byBcEPtCyYFNnzuxZnGlw==}
     hasBin: true
 
   kolorist@1.8.0:
@@ -2964,6 +2975,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -3222,14 +3234,14 @@ snapshots:
       '@babel/parser': 7.27.7
       '@babel/types': 7.28.5
 
-  '@babel/traverse@7.27.7':
+  '@babel/traverse@7.27.7(supports-color@8.1.1)':
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/generator': 7.28.5
       '@babel/parser': 7.27.7
       '@babel/template': 7.27.2
       '@babel/types': 7.28.5
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -3715,13 +3727,13 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@unocss/astro@66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))':
+  '@unocss/astro@66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))':
     dependencies:
       '@unocss/core': 66.5.12
       '@unocss/reset': 66.5.12
-      '@unocss/vite': 66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+      '@unocss/vite': 66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
     optionalDependencies:
-      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0)
+      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))
 
   '@unocss/cli@66.5.12':
     dependencies:
@@ -3827,10 +3839,10 @@ snapshots:
       '@unocss/core': 66.5.12
       magic-string: 0.30.21
 
-  '@unocss/transformer-attributify-jsx@66.5.12':
+  '@unocss/transformer-attributify-jsx@66.5.12(supports-color@8.1.1)':
     dependencies:
       '@babel/parser': 7.27.7
-      '@babel/traverse': 7.27.7
+      '@babel/traverse': 7.27.7(supports-color@8.1.1)
       '@unocss/core': 66.5.12
     transitivePeerDependencies:
       - supports-color
@@ -3849,7 +3861,7 @@ snapshots:
     dependencies:
       '@unocss/core': 66.5.12
 
-  '@unocss/vite@66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))':
+  '@unocss/vite@66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@unocss/config': 66.5.12
@@ -3860,7 +3872,7 @@ snapshots:
       pathe: 2.0.3
       tinyglobby: 0.2.15
       unplugin-utils: 0.3.1
-      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0)
+      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))
 
   '@volar/language-core@2.4.27':
     dependencies:
@@ -4227,6 +4239,8 @@ snapshots:
 
   commander@10.0.1: {}
 
+  commander@15.0.0: {}
+
   commander@5.1.0: {}
 
   commander@8.3.0: {}
@@ -4237,11 +4251,11 @@ snapshots:
     dependencies:
       mime-db: 1.54.0
 
-  compression@1.8.1:
+  compression@1.8.1(supports-color@8.1.1):
     dependencies:
       bytes: 3.1.2
       compressible: 2.0.18
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@8.1.1)
       negotiator: 0.6.4
       on-headers: 1.1.0
       safe-buffer: 5.2.1
@@ -4260,10 +4274,10 @@ snapshots:
       ini: 1.3.8
       proto-list: 1.2.4
 
-  connect@3.7.0:
+  connect@3.7.0(supports-color@8.1.1):
     dependencies:
-      debug: 2.6.9
-      finalhandler: 1.1.2
+      debug: 2.6.9(supports-color@8.1.1)
+      finalhandler: 1.1.2(supports-color@8.1.1)
       parseurl: 1.3.3
       utils-merge: 1.0.1
     transitivePeerDependencies:
@@ -4307,13 +4321,17 @@ snapshots:
 
   de-indent@1.0.2: {}
 
-  debug@2.6.9:
+  debug@2.6.9(supports-color@8.1.1):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
+      supports-color: 8.1.1
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@8.1.1):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 8.1.1
 
   decimal.js@10.6.0: {}
 
@@ -4523,9 +4541,9 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  finalhandler@1.1.2:
+  finalhandler@1.1.2(supports-color@8.1.1):
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@8.1.1)
       encodeurl: 1.0.2
       escape-html: 1.0.3
       on-finished: 2.3.0
@@ -4773,11 +4791,11 @@ snapshots:
     dependencies:
       ejs: 3.1.10
 
-  hexo-renderer-marked@7.0.1:
+  hexo-renderer-marked@7.0.1(supports-color@8.1.1):
     dependencies:
       dompurify: 3.3.1
       hexo-util: 3.3.0
-      jsdom: 25.0.1
+      jsdom: 25.0.1(supports-color@8.1.1)
       marked: 15.0.12
     transitivePeerDependencies:
       - bufferutil
@@ -4789,29 +4807,29 @@ snapshots:
     dependencies:
       pug: 3.0.3
 
-  hexo-renderer-stylus@3.0.1:
+  hexo-renderer-stylus@3.0.1(supports-color@8.1.1):
     dependencies:
-      nib: 1.2.0(stylus@0.62.0)
-      stylus: 0.62.0
+      nib: 1.2.0(stylus@0.62.0(supports-color@8.1.1))
+      stylus: 0.62.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  hexo-server@3.0.0:
+  hexo-server@3.0.0(supports-color@8.1.1):
     dependencies:
       bluebird: 3.7.2
-      compression: 1.8.1
-      connect: 3.7.0
+      compression: 1.8.1(supports-color@8.1.1)
+      connect: 3.7.0(supports-color@8.1.1)
       mime: 3.0.0
-      morgan: 1.10.1
+      morgan: 1.10.1(supports-color@8.1.1)
       open: 8.4.2
       picocolors: 1.1.1
-      serve-static: 1.16.3
+      serve-static: 1.16.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
   hexo-theme-landscape@1.1.0: {}
 
-  hexo-theme-shokax@0.5.4(chalk@4.1.2)(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0)):
+  hexo-theme-shokax@0.5.4(chalk@4.1.2)(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
       '@algolia/client-search': 5.34.1
       '@common.js/p-limit': 6.1.0
@@ -4832,8 +4850,8 @@ snapshots:
       js-yaml: 4.1.0
       katex: 0.16.22
       mouse-firework: 0.1.1
-      nyx-player: 0.1.1(postcss@8.5.6)(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
-      shokax-uikit: 0.0.5(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+      nyx-player: 0.1.1(postcss@8.5.6)(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
+      shokax-uikit: 0.0.5(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       theme-shokax-anime: 0.0.8
       twikoo: 1.6.44
       vue: 3.5.18(typescript@5.9.3)
@@ -4940,17 +4958,17 @@ snapshots:
       statuses: 2.0.2
       toidentifier: 1.0.1
 
-  http-proxy-agent@7.0.2:
+  http-proxy-agent@7.0.2(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6:
+  https-proxy-agent@7.0.6(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -5078,15 +5096,15 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@25.0.1:
+  jsdom@25.0.1(supports-color@8.1.1):
     dependencies:
       cssstyle: 4.6.0
       data-urls: 5.0.0
       decimal.js: 10.6.0
       form-data: 4.0.5
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.6
+      http-proxy-agent: 7.0.2(supports-color@8.1.1)
+      https-proxy-agent: 7.0.6(supports-color@8.1.1)
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.23
       parse5: 7.3.0
@@ -5126,6 +5144,10 @@ snapshots:
   katex@0.16.22:
     dependencies:
       commander: 8.3.0
+
+  katex@0.18.6:
+    dependencies:
+      commander: 15.0.0
 
   kolorist@1.8.0: {}
 
@@ -5332,10 +5354,10 @@ snapshots:
 
   moment@2.30.1: {}
 
-  morgan@1.10.1:
+  morgan@1.10.1(supports-color@8.1.1):
     dependencies:
       basic-auth: 2.0.1
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@8.1.1)
       depd: 2.0.0
       on-finished: 2.3.0
       on-headers: 1.1.0
@@ -5358,9 +5380,9 @@ snapshots:
 
   negotiator@0.6.4: {}
 
-  nib@1.2.0(stylus@0.62.0):
+  nib@1.2.0(stylus@0.62.0(supports-color@8.1.1)):
     dependencies:
-      stylus: 0.62.0
+      stylus: 0.62.0(supports-color@8.1.1)
 
   no-case@3.0.4:
     dependencies:
@@ -5389,7 +5411,7 @@ snapshots:
 
   nwsapi@2.2.23: {}
 
-  nyx-player@0.1.1(postcss@8.5.6)(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0)):
+  nyx-player@0.1.1(postcss@8.5.6)(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
       '@iconify-json/ri': 1.2.7
       '@vue/test-utils': 2.4.6
@@ -5399,7 +5421,7 @@ snapshots:
       pinia: 3.0.4(typescript@5.9.3)(vue@3.5.18(typescript@5.9.3))
       pinia-plugin-persistedstate: 4.7.1(pinia@3.0.4(typescript@5.9.3)(vue@3.5.18(typescript@5.9.3)))
       rollup-plugin-visualizer: 5.14.0(rollup@4.54.0)
-      unocss: 66.5.12(postcss@8.5.6)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+      unocss: 66.5.12(postcss@8.5.6)(supports-color@8.1.1)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       vue: 3.5.18(typescript@5.9.3)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -5716,9 +5738,9 @@ snapshots:
 
   semver@7.7.3: {}
 
-  send@0.19.2:
+  send@0.19.2(supports-color@8.1.1):
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@8.1.1)
       depd: 2.0.0
       destroy: 1.2.0
       encodeurl: 2.0.0
@@ -5734,12 +5756,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  serve-static@1.16.3:
+  serve-static@1.16.3(supports-color@8.1.1):
     dependencies:
       encodeurl: 2.0.0
       escape-html: 1.0.3
       parseurl: 1.3.3
-      send: 0.19.2
+      send: 0.19.2(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -5762,13 +5784,13 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
 
-  shokax-uikit@0.0.5(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0)):
+  shokax-uikit@0.0.5(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
       '@pagefind/default-ui': 1.4.0
       '@vueuse/core': 13.9.0(vue@3.5.18(typescript@5.9.3))
       es-toolkit: 1.39.8
-      vite-plugin-css-injected-by-js: 3.5.2(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
-      vite-plugin-dts: 4.5.4(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+      vite-plugin-css-injected-by-js: 3.5.2(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
+      vite-plugin-dts: 4.5.4(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       vue: 3.5.18(typescript@5.9.3)
     transitivePeerDependencies:
       - '@types/node'
@@ -5842,10 +5864,10 @@ snapshots:
 
   striptags@3.2.0: {}
 
-  stylus@0.62.0:
+  stylus@0.62.0(supports-color@8.1.1):
     dependencies:
       '@adobe/css-tools': 4.3.3
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
       glob: 7.2.3
       sax: 1.3.0
       source-map: 0.7.6
@@ -5965,9 +5987,9 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss@66.5.12(postcss@8.5.6)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0)):
+  unocss@66.5.12(postcss@8.5.6)(supports-color@8.1.1)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
-      '@unocss/astro': 66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+      '@unocss/astro': 66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
       '@unocss/cli': 66.5.12
       '@unocss/core': 66.5.12
       '@unocss/postcss': 66.5.12(postcss@8.5.6)
@@ -5981,13 +6003,13 @@ snapshots:
       '@unocss/preset-wind': 66.5.12
       '@unocss/preset-wind3': 66.5.12
       '@unocss/preset-wind4': 66.5.12
-      '@unocss/transformer-attributify-jsx': 66.5.12
+      '@unocss/transformer-attributify-jsx': 66.5.12(supports-color@8.1.1)
       '@unocss/transformer-compile-class': 66.5.12
       '@unocss/transformer-directives': 66.5.12
       '@unocss/transformer-variant-group': 66.5.12
-      '@unocss/vite': 66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0))
+      '@unocss/vite': 66.5.12(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)))
     optionalDependencies:
-      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0)
+      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -6025,30 +6047,30 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite-plugin-css-injected-by-js@3.5.2(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0)):
+  vite-plugin-css-injected-by-js@3.5.2(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
-      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0)
+      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))
 
-  vite-plugin-dts@4.5.4(rollup@4.54.0)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0)):
+  vite-plugin-dts@4.5.4(rollup@4.54.0)(supports-color@8.1.1)(typescript@5.9.3)(vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))):
     dependencies:
       '@microsoft/api-extractor': 7.55.2
       '@rollup/pluginutils': 5.3.0(rollup@4.54.0)
       '@volar/typescript': 2.4.27
       '@vue/language-core': 2.2.0(typescript@5.9.3)
       compare-versions: 6.1.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@8.1.1)
       kolorist: 1.8.0
       local-pkg: 1.1.2
       magic-string: 0.30.21
       typescript: 5.9.3
     optionalDependencies:
-      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0)
+      vite: 7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1))
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite@7.3.0(jiti@2.6.1)(stylus@0.62.0):
+  vite@7.3.0(jiti@2.6.1)(stylus@0.62.0(supports-color@8.1.1)):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.3)
@@ -6059,7 +6081,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 2.6.1
-      stylus: 0.62.0
+      stylus: 0.62.0(supports-color@8.1.1)
 
   void-elements@3.1.0: {}
 
